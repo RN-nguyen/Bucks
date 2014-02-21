@@ -1,4 +1,28 @@
 Bucks::Application.routes.draw do
+
+  
+  get "static_pages/home"
+
+  get "static_pages/about_us"
+
+  get "static_pages/faq"
+
+  get "static_pages/contact_us"
+
+  get "static_pages/terms_of_service"
+
+  get "static_pages/privacy_policy"
+
+  get "home/about_us"
+
+  get "home/faq"
+
+  get "home/contact_us"
+
+  get "home/terms_of_service"
+
+  get "home/privacy_policy"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
