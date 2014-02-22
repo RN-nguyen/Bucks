@@ -58,5 +58,8 @@ module Bucks
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # If deploying on Heroku with Rails 3.2 
+    config.assets.initialize_on_precompile = false
   end
 end

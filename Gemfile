@@ -10,6 +10,7 @@ gem 'pg'
 gem 'simple_form'
 gem 'jquery-rails'
 gem "paperclip", "~> 3.0"
+gem 'devise'
 
 group :development do
   gem 'pry-rails'

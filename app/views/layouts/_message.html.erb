@@ -1,0 +1,9 @@
+<section id="content">
+  <% flash.each do |name, msg| %>
+  <%= content_tag :div, msg, class: name %>
+<% end %>
+<div class="jumbotron">
+  <div class="container"
+    <%= yield %>
+  </div>
+</div>
