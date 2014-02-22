@@ -1,6 +1,8 @@
 Bucks::Application.routes.draw do
 
   
+  devise_for :students
+
   get "static_pages/home"
 
   get "static_pages/about_us"
