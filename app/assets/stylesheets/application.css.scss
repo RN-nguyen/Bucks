@@ -1,1 +1,14 @@
 @import "bootstrap_and_overrides";
+
+html{
+  /* This image will be displayed fullscreen */
+  background:url('background.jpg') no-repeat center center;
+  /* Ensure the html element always takes up the full height of the browser window */
+  min-height:100%;
+  background-size:cover;
+}
+
+body{
+  /* Workaround for some mobile browsers */
+  min-height:100%;
+}
