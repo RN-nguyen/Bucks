@@ -3,27 +3,27 @@ Bucks::Application.routes.draw do
   
   devise_for :students
 
-  get "static_pages/home"
+  get "bucks/home"
 
-  get "static_pages/about_us"
+  get "bucks/about_us"
 
-  get "static_pages/faq"
+  get "bucks/faq"
 
-  get "static_pages/contact_us"
+  get "bucks/contact_us"
 
-  get "static_pages/terms_of_service"
+  get "bucks/terms_of_service"
 
-  get "static_pages/privacy_policy"
+  get "bucks/privacy_policy"
 
-  get "home/about_us"
+  # get "home/about_us"
 
-  get "home/faq"
+  # get "home/faq"
 
-  get "home/contact_us"
+  # get "home/contact_us"
 
-  get "home/terms_of_service"
+  # get "home/terms_of_service"
 
-  get "home/privacy_policy"
+  # get "home/privacy_policy"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
