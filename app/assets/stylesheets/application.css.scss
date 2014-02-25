@@ -3,11 +3,9 @@
 body{
    background:url('bgimage.jpg') no-repeat center center;
    /* Workaround for some mobile browsers */
-   min-height:100%;
    margin-top: fixed;
-   background-size: 100%;
+   background-attachment: fixed;
 }
-
 
 .jumbotron{
   margin-top: 10%;
