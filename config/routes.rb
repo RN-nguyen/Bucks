@@ -2,7 +2,7 @@ Bucks::Application.routes.draw do
 
   
   devise_for :students
-
+  
   get "bucks/home"
 
   get "bucks/about_us"
