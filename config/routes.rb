@@ -3,7 +3,7 @@ Bucks::Application.routes.draw do
   
   devise_for :students
 
-  get "bucks/home"
+  get "/home", to: "bucks#home"
 
   get "bucks/about_us"
 
