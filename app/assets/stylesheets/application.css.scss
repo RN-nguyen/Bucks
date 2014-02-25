@@ -1,15 +1,14 @@
 @import "bootstrap_and_overrides";
 
-html{
-  /* This image will be displayed fullscreen */
-  // background:url('background.jpg') no-repeat center center;
-  /* Ensure the html element always takes up the full height of the browser window */
-  min-height:100%;
-  background-size:cover;
+body{
+   background:url('bgimage.jpg') no-repeat center center;
+   /* Workaround for some mobile browsers */
+   min-height:100%;
+   margin-top: fixed;
+   background-size: 100%;
 }
 
-body{
-   background:url('background.jpg') no-repeat center center;
-  /* Workaround for some mobile browsers */
-  min-height:100%;
+.jumbotron{
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
