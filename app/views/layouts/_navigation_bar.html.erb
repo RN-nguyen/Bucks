@@ -7,6 +7,23 @@
       <li><%= link_to "FAQ", bucks_faq_path %></li>
       <li><%= link_to "Contact Us", bucks_contact_us_path %></li>
     </ul>
+
+
+      <ul class="nav navbar-nav navbar-right">
+        <% if current_user %>
+          <li>
+
+            <%= link_to edit_user_registration_path(current_user) do %>
+              <%= image_tag( current_user.profile_picture.url(:tiny), class: 'img-circle' ) %>
+              <%= [current_user.first_name, current_user.last_name].join(' ') %>
+            <% end %>
+          </li>
+          <li> <%= link_to "Sign Out", destroy_user_session_path, method: :delete %> </li>
+        <% else %>
+          <li> <%= link_to "Sign Up", new_user_registration_path %> </li>
+          <li> <%= link_to "Sign In", user_session_path %> </li>
+        <% end %>
+      </ul>
   </div><!-- /.container-fluid -->
 </nav>
 

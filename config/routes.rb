@@ -5,6 +5,8 @@ Bucks::Application.routes.draw do
 
   devise_for :students
 
+  get "/users/sign_up", to: "registrations#new", as: :sign_up
+
   get "/home", to: "bucks#home"  
 
   get "bucks/about_us"
